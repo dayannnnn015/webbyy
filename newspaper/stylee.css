@@ -1,0 +1,143 @@
+body{
+    background-color: #F5F5F5;
+
+}
+
+
+@media (min-width: 1200px) {
+body{
+    min-height: 95vh;
+    margin: 10px 200px;
+    background-color: #F5F5F5;
+}
+header{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: justify;   
+}
+.logo{
+    height: 50px;
+    width: 200px;
+   
+}
+h4{
+    font-weight: 300;
+}
+
+
+.content, .content-two, .content-three, .content-four{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pic, .rally, .police{
+    height: auto;
+    width: 100%;
+}
+.paper{
+    height: 850px;
+    width: 100%;
+}
+.caption{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: gray;
+} 
+.date{
+    font-size: 15px;
+    font-weight: 250;
+}
+}
+@media  (max-width: 1200px) {  
+    body { 
+        margin: 10px 150px;
+    }
+    .logo{
+        height: 40px;
+        width: 150px;
+    }
+
+    .pic, .rally, .police{
+            height: auto;
+            width: 100%;
+    }
+    .paper{
+            height: 700px;
+            width: 100%;
+    }
+    .caption{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            color: gray;
+    } 
+    .date{
+            font-size: 13px;
+            font-weight: 200;
+    }
+}
+
+@media (max-width: 750px) {  
+    body { 
+        margin: 10px 75px;
+    }
+    
+    .logo{
+        height: 37px;
+        width: 145px;
+    }
+
+    .pic, .rally, .police{
+            height: auto;
+            width: 100%;
+    }
+    .paper{
+            height: 700px;
+            width: 100%;
+    }
+    .caption{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            color: gray;
+    } 
+    .date{
+            font-size: 12px;
+            font-weight: 195;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body{
+        margin: 10px 50px;
+    }
+    .logo{
+        height: 35px;
+        width: 140px;
+    }
+
+    .pic, .rally, .police{
+            height: auto;
+            width: 100%;
+    }
+    .paper{
+            height: 500px;
+            width: 100%;
+    }
+    .caption{
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            color: gray;
+    } 
+    .date{
+            font-size: 12px;
+            font-weight: 195;
+    }
+
+}
+

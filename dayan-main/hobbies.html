@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diane's Fun Hobbies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive, sans-serif;
+            background-color: #FFF5E6;
+            color: #5A3D2B;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0 #FFE8E8;
+        }
+        
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, #FFC154, #47B8E0, #FF6B6B);
+            margin-bottom: 30px;
+        }
+        
+        .hobbies-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        ol {
+            counter-reset: hobby-counter;
+            padding-left: 0;
+        }
+        
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #F7F7F7;
+            position: relative;
+            padding-left: 70px;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+        
+        li:hover {
+            transform: translateX(10px);
+            box-shadow: 5px 5px 0 rgba(255,107,107,0.3);
+        }
+        
+        li::before {
+            counter-increment: hobby-counter;
+            content: counter(hobby-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #FFC154;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Different colors for each hobby */
+        li:nth-child(1) { border-left: 5px solid #FF9AA2; }
+        li:nth-child(2) { border-left: 5px solid #FFB7B2; }
+        li:nth-child(3) { border-left: 5px solid #FFDAC1; }
+        li:nth-child(4) { border-left: 5px solid #E2F0CB; }
+        li:nth-child(5) { border-left: 5px solid #B5EAD7; }
+        li:nth-child(6) { border-left: 5px solid #C7CEEA; }
+        li:nth-child(7) { border-left: 5px solid #A2D7D8; }
+        li:nth-child(8) { border-left: 5px solid #FFC154; }
+        li:nth-child(9) { border-left: 5px solid #47B8E0; }
+        li:nth-child(10) { border-left: 5px solid #FF6B6B; }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .comment {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="hobbies-container">
+        <h1>Diane's Top 10 "Productive" Hobbies</h1>
+        <hr>
+        
+        <ol>
+            <li>
+                <i class="icon fas fa-bed"></i> 
+                <strong>Professional Sleeping</strong>
+                <span class="comment">"I'm training for the Sleeping Olympics - gold medal in napping!"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-scroll"></i> 
+                <strong>Social Media Archeology</strong>
+                <span class="comment">"Digging through posts from 2012 like it's ancient history"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-basketball-ball"></i> 
+                <strong>Basketball (When I'm not sleeping)</strong>
+                <span class="comment">"Air Diane has a nice ring to it, don't you think?"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-gamepad"></i> 
+                <strong>Blockblast Addiction</strong>
+                <span class="comment">"Just one more game... said 50 games ago"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-video"></i> 
+                <strong>TikTok Time Travel</strong>
+                <span class="comment">"I went to watch one video and suddenly 4 hours disappeared"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-film"></i> 
+                <strong>Marathon Movie Watching</strong>
+                <span class="comment">"I consider this cultural education... really!"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-bicycle"></i> 
+                <strong>Cycling (To the fridge and back)</strong>
+                <span class="comment">"It's about the journey... especially when snacks are involved"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-book"></i> 
+                <strong>Occasional Studying</strong>
+                <span class="comment">"Mostly happens during exam week... mostly"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-book-open"></i> 
+                <strong>Studying Again (By accident)</strong>
+                <span class="comment">"Wait, did I just open a textbook voluntarily?"</span>
+            </li>
+            
+            <li>
+                <i class="icon fas fa-graduation-cap"></i> 
+                <strong>Always Studying (In my dreams)</strong>
+                <span class="comment">"I swear I was studying... I just fell asleep on the book"</span>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
